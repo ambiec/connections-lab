@@ -1,0 +1,17 @@
+@font-face {
+    font-family: Inconsolata;
+    src: url(Inconsolata.ttf);
+  }
+
+h1 {
+    color:olive;
+    font-family: Inconsolata;
+}
+
+p  {
+    font-family: Inconsolata;
+}
+
+img {
+    max-width: 20%;
+}
