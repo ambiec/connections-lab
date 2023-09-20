@@ -1,0 +1,172 @@
+@font-face {
+    font-family: 'IBM Plex Mono';
+    src: url(fonts/IBMPlexMono-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Digital';
+    src: url(fonts/DS-DIGI.TTF);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.startScreen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dialogue p{
+    font-family: 'IBM Plex Mono';
+    font-size: 22px;
+    color: white;
+
+    /*animation from https://css-tricks.com/snippets/css/typewriter-effect/ */
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid grey; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 72px auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .10em; /* Adjust as needed */
+    animation: 
+      typing 3s steps(40, end),
+      blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+from { width: 0 }
+to { width: 100% }
+}
+
+@keyframes blink-caret { /* typewriter cursor */
+from, to { border-color: transparent }
+50% { border-color: gray; }
+}
+
+
+/* CLOCK IN */
+
+.time {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #32A956;
+    animation: blink-animation 1.2s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
+
+.time p{
+    font-family: 'IBM Plex Mono';
+    font-size: 22px;
+}
+
+.time h1 {
+    margin: 128px 0;
+    font-family: 'Digital';
+    font-size: 160px;
+}
+
+.clockIn {
+    font-family: 'IBM Plex Mono';
+    font-size: 22px;
+    background-color:black;
+    color: white;
+    padding: 8px 16px;
+}
+
+/* SECUIRTY BOOTH */
+
+.security-image {
+    position: absolute;
+    top: 0; left: 0;
+    justify-content: center;
+    width: 100%; height: 100%;
+}
+
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.securityContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkCam {
+    display: none;
+    position: absolute;
+    margin-top: 200px;
+    font-family: 'IBM Plex Mono';
+    font-size: 20px;
+    color:#fafafa;
+    background-color: #3a3b3c;
+    padding: 8px 16px;
+}
+
+
+
+
+/* */
+/* .camContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} */
+
+
+.clipOne {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index:3;
+}
+
+.overlay {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+    z-index: 2;
+}
+
+
+.capContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 72px;
+}
+
+.caption {
+    display: none;
+    font-family: 'IBM Plex Mono';
+    font-size: 20px;
+    color:#fafafa;
+    z-index:4;
+}
+
+
+
+.line2 {
+    display: none;
+    font-family: 'IBM Plex Mono';
+    font-size: 22px;
+    color:red;
+    z-index:4;
+}

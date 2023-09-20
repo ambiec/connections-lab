@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Night Shift</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- START -->
+    <section class="startScreen">
+        <section class="dialogue">
+            <p>Working the night shift alone tonight...</p>  <!-- changed to <p class> but messed up the animation -->
+        </section>
+        <section class="time">
+            <h1>10:00</h1> 
+            <p>PM</p>
+        </section>
+        <button class="clockIn" id="c_button" onclick="show()">CLOCK IN</button>
+    </section>
+
+    <section class="securityContainer">
+        <img id="image" src=""/>
+        <button class="checkCam" id="cam_button" onclick="play()">Check security cameras</button>
+    </section>
+
+    <section id="overlay"></section>
+
+    <section class="capContainer">
+        <p id="caption" class="caption">Press [space] to cycle cameras</p>
+        <p id="line2" class="line2">So why... is there a man looking at the security camera?</p>
+    </section>
+
+    <section class="camContainer">
+        <video id="video_1" autoplay loop>
+            <source src="">
+        </video>
+    </section>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
