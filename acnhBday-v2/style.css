@@ -1,0 +1,136 @@
+@font-face {
+    font-family: 'Nintendo';
+    src: url(assets/nintendo.otf);
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    background-image: url(assets/Background.jpeg);
+    background-size: cover;
+}
+
+.headerContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0 32px;
+    height: 10vh;
+}
+
+.headerContainer img {
+    height: 12vh;
+}
+
+.headerContainer p {
+    margin: 0 12px;
+    font-family: 'Nintendo';
+    font-size: 16px;
+    color: #327A93;
+    box-shadow: 0 2px 0px #327A93;
+}
+
+.mainContainer {
+    height: 100vh;
+}
+
+
+.heroContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+    gap: 12px;
+}
+
+.heroContainer p {
+    padding: 16px 32px;
+    font-family: 'Nintendo';
+    font-size: 24px;
+}
+
+.heroContainer button {
+    padding: 4px 72px;
+    margin: 16px 32px;
+    font-family: 'Nintendo';
+    font-size: 18px;
+    color: #FDFBF7;
+    background-color: #018077;
+    border-color: #016F68; 
+    border-radius: 4px;
+}
+
+.inputContainer {
+    padding: 16px 32px;
+}
+
+select {
+    /* Add your select styles here */
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+select option {
+    /* Add your option styles here */
+    font-size: 14px;
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 5px;
+  }
+  
+  /* Style for the selected option */
+  select option:checked {
+    /* Add your selected option styles here */
+    background-color: #333;
+    color: #fff;
+  }
+
+
+.villagerContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 24px 0;
+    gap: 16px;
+}
+
+.intro {
+    font-family: 'Nintendo';
+    font-size: 22px;
+}
+
+.villagerData {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.headshot {
+    height: 32vh;
+    border-radius: 4px;
+}
+
+.description {
+    width: 20vw;
+    font-family: 'Nintendo';
+    font-size: 16px;
+    padding: 8px 12px;
+    text-shadow: 2px 0 0 rgba(246, 238, 225),
+    0 2px 0 rgba(246, 238, 225),
+    -2px 0 0 rgba(246, 238, 225),
+    0 -2px 0 rgba(246, 238, 225);
+}
+
+.highlight {
+    color: #BB6B54;
+}
